@@ -27,7 +27,7 @@ def get_book_list():
 	    row = cursor.fetchone()
 	    print (row[0], "-->", row[1])
 	    book_list[row[0]] = row[1]
-
+	print "closing db connection" 
 	# Close the connection
 	db.close()
 	return book_list
